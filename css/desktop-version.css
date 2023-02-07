@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #e5e5e5;
+  }
+
+  #main-page {
+    left: 0;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    background-image: url(/images/desktop_main/Header.png);
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 4rem;
+    padding: 10px 24px;
+    border-bottom-left-radius: 80px;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  .my-logo {
+    margin: 16px 0 0 100px;
+  }
+
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    margin-right: 10%;
+  }
+
+  .desktop-menu a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .headline {
+    padding: 350px 15% 255px;
+    margin-top: 20px;
+  }
+}
