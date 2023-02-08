@@ -8,6 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/mobile-version.css"/>
+  <link rel="stylesheet" href="css/desktop-version.css"/>
   <title>Youcode</title>
 </head>
 <body>
@@ -16,8 +17,15 @@
     <header>
       <nav id="navbar">
         <p class="my-logo">YouCode</p>
+        <ul class="menu">
+          <li><a class="menuItem" href="#about-course">About</a></li>
+        </ul>
+        <ul class="desktop-menu">
+          <li><a class="" href="#about-course">About</a></li>
+         </ul>
         <button class="hamburger">
           <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
         </button>
       </nav>
     </header>
@@ -34,56 +42,78 @@
     <section class="main-program-list">
       <h2 class="main-program-title">Main Program</h2>
       <hr>
-      <section class="program-one">
-        <img class="program-tag" src="images/html.png" alt="Html logo">
-        <h2 class="program-title">HTML</h2>
-        <p class="program-content">Listen to the speakers from various countries about the message of sharing and opening.</p>
-      </section>
-      <section class="program-two">
-        <img class="program-tag" src="images/css.png" alt="css logo">
-        <h2 class="program-title">CSS</h2>
-        <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
-      </section>
-      <section class="program-three">
-        <img class="program-tag" src="images/js.png" alt="javascript logo">
-        <h2 class="program-title">JS</h2>
-        <p class="program-content">Learn how to use javascript -a powerful and flexible language for adding website interactivity.</p>
+      <section class="programs">
+          <section class="program-one">
+            <img class="program-tag" src="images/html.png" alt="Html logo">
+            <h2 class="program-title">HTML</h2>
+            <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
+          </section>
+          <section class="program-two">
+            <img class="program-tag" src="images/css.png" alt="css logo">
+            <h2 class="program-title">CSS</h2>
+            <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
+          </section>
+          <section class="program-three">
+            <img class="program-tag" src="images/js.png" alt="javascript logo">
+            <h2 class="program-title">JS</h2>
+            <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
+          </section>
       </section>
       <button class="program-join-btn">Join the Class for 2023</button>
+      </section>
+      <section>
+        <h2 class="featured-speaker-title">Featured Teachers</h2>
+        <hr>
+        <section class="featured-speakers">
+          <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
+          <div class="person-content">
+            <h2 class="person-name">Ezra Erimias</h2>
+            <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <hr>
+            <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
+          </div>
+        </section>
+        <section class="featured-speakers">
+          <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
+          <div class="person-content">
+            <h2 class="person-name">Ezra Erimias</h2>
+            <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <hr>
+            <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
+          </div>
+        </section>
+        <section class="featured-speakers">
+          <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
+          <div class="person-content">
+            <h2 class="person-name">Ezra Erimias</h2>
+            <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <hr>
+            <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
+          </div>
+        </section>
+      </section>
     </section>
-    <section>
-      <h2 class="featured-speaker-title">Featured Teachers</h2>
-      <hr>
-      <section class="featured-speakers">
-        <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
-        <div class="person-content">
-          <h2 class="person-name">Ezra Erimias</h2>
-          <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr>
-          <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
-        </div>
-      </section>
-      <section class="featured-speakers">
-        <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
-        <div class="person-content">
-          <h2 class="person-name">Ezra Erimias</h2>
-          <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr>
-          <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
-        </div>
-      </section>
-      <section class="featured-speakers">
-        <img src="images/avatar.jpg" alt="Speaker's photo" class="person-photo">
-        <div class="person-content">
-          <h2 class="person-name">Ezra Erimias</h2>
-          <p class="person-profession">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr>
-          <p class="person-background">best book on social and ethical relevance in communications policy research, 2006</p>
-        </div>
-      </section>
-    </section>
-  </section>
 
+    <section class="desktop-partner">
+      <div class="d-partner">
+        <h4 class="d-partner-title">Partner</h4>
+        <hr>
+        <ul class="d-sponsors">
+          <li class="d-mozilla">Mozilla</li>
+          <li class="d-google">Goole</li>
+          <li class="d-naver">NAVER</li>
+          <li class="d-airbnb">airbnb</li>
+          <li class="d-airoflot">Airoflot</li>
+        </ul>
+      </div>
+      <footer class="d-footer">
+        <div class="d-copy">@creative <br> Commons Kerea</div>
+        <div class="alright-reserved">
+          <p class="d-footer-content">Creative commons korea. Some rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+  
   <!-- About myself section -->
   <section id="about-course" class="about-page">
     <div class="about-page-card">
@@ -116,8 +146,10 @@
       <p class="about-page-logo-competition">
         Take a look at the last two CC global submit which took place in Brazil and Poland.
       </p>
-      <img src="images/past-img0.png" alt="Past images of the program" class="about-page-past-img">
-      <img src="images/past-img1.png" alt="Past images of the program" class="about-page-past-img">
+      <div class="d-about-page-past-img">
+        <img src="images/past-img0.png" alt="Past images of the program" class="about-page-past-img">
+        <img src="images/past-img1.png" alt="Past images of the program" class="about-page-past-img">
+      </div>
       <div class="partner">
         <h4 class="partner-title">Partners</h4>
         <hr>
@@ -137,5 +169,12 @@
       <p class="footer-content">Creative commons korea. Some rights reserved.</p>
     </div>
   </footer>
+  <footer class="desktop-footer">
+    <div class="copy">@Creative Commons Kerea</div>
+    <div class="alright-reserved">
+      <p class="footer-content">Creative commons korea. Some rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

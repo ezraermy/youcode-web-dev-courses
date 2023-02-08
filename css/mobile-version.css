@@ -1,6 +1,4 @@
-html {
-  margin: 0;
-}
+@import "desktop-version.css";
 
 body {
   width: 100%;
@@ -28,11 +26,59 @@ body {
   animation: logoAnimate 3s alternate-reverse 3s 2;
 }
 
+/* MOBILE MENU DOM MANIPULATION */
+.menuItem {
+  display: block;
+  margin: 2rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
 .hamburger {
+  position: relative;
   border: none;
-  background: white;
-  color: #505f79;
+  background-color: transparent;
+  color: #ec5242;
   cursor: pointer;
+  padding-left: 16rem;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.hamburger > .closeIcon {
+  background: none;
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: 0.3s;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.4);
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  backdrop-filter: blur(6px);
+}
+
+.showMenu {
+  top: -1%;
+  transform: translateY(0);
+  color: #fff;
 }
 
 #main-page {
@@ -40,18 +86,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background: #fff;
-}
-
-.cover-socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
-}
-
-.socials a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #505f79;
 }
 
 @keyframes logoAnimate {
@@ -211,7 +245,8 @@ hr {
 .about-page-title {
   color: #ec5242;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px;
+  font-weight: 700;
 }
 
 .about-page-content {
@@ -276,6 +311,7 @@ hr {
 }
 
 .partner {
+  display: block;
   background: #272a31;
   margin-top: 33px;
 }
@@ -323,6 +359,10 @@ hr {
 }
 
 /* FOOTER  */
+.desktop-footer {
+  display: none;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -343,4 +383,12 @@ hr {
   padding: 0 10px;
   font-size: 12px;
   color: #505f79;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.desktop-partner {
+  display: none;
 }
