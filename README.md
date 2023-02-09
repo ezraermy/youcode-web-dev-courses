@@ -51,9 +51,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Tagline_And_Contact]**
-- **[Project_Samples]**
-- **[Information_About_Myself]**
+- **[Home_page]**
+- **[Teachers_List]**
+- **[Information_about_Programs]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,15 +123,20 @@ To run the project, execute the following command:
 - Twitter: [@ezraermy](https://twitter.com/)
 - LinkedIn: [Ezra Yehuwalashet](https://linkedin.com/)
 
+👤 **Cindy Shin**
+- Original Design: [by Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Dribbble: [Cindy Shin](https://dribbble.com/adagio07/collections)
+- LinkedIn: [Cindy Shin](https://www.linkedin.com/in/adagio07)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Contact_Information]**
+- [ ] **[Main_Page]**
 - [ ] **[Table_of_Content]**
-- [ ] **[Detail_Page]**
+- [ ] **[About_Page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +162,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank NahnahAJ Felicia
+I would like to thank Jose Luis Vazquez Flores
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
