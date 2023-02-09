@@ -28,7 +28,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #ec5242 !important;
+    color: #ec5242;
     animation: logoAnimate 3s alternate-reverse 3s 2;
   }
 
@@ -42,11 +42,11 @@
 
   .desktop-menu a {
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 20px;
     text-decoration: none;
-    color: crimson;
+    color: #ec5242;
   }
 
   .hamburger {
@@ -97,7 +97,6 @@
   /* MAIN PROGRAM SECTIONS  */
   .main-program-list {
     background-color: #020202;
-    opacity: 0.8;
     background-size: 10px 10px;
     background-image: repeating-linear-gradient(45deg, #0d0f31 0, #0d0f31 1px, #020202 0, #020202 50%);
   }
