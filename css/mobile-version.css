@@ -13,8 +13,12 @@ body {
 
 #navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 22px 27px;
+  width: 85%;
+  background: #fff;
+  top: 0;
 }
 
 .my-logo {
@@ -47,7 +51,6 @@ body {
   background-color: transparent;
   color: #ec5242;
   cursor: pointer;
-  padding-left: 16rem;
 }
 
 .closeIcon {
@@ -68,7 +71,7 @@ body {
   right: 0;
   bottom: 0;
   height: 100vh;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(240, 0, 0, 0.5);
   color: white;
   list-style: none;
   padding-top: 4rem;
@@ -115,6 +118,7 @@ a:link {
 .title {
   font-size: 26px;
   color: #ec5242;
+  margin-top: 75px;
 }
 
 .content {
@@ -137,7 +141,9 @@ a:link {
 
 /* MAIN PROGRAM SECTIONS  */
 .main-program-list {
-  background: url('/images/bg4.jpg');
+  background-color: #020202;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #0d0f31 0, #0d0f31 1px, #020202 0, #020202 50%);
 }
 
 .main-program-title {
@@ -232,6 +238,18 @@ hr {
   color: #505f79;
   font-size: 11px;
   font-style: italic;
+}
+
+#myBtn {
+  width: 80%;
+  height: 40px;
+  background: #fff;
+  border: 1px #e5e5e5 solid;
+  margin: 30px 40px 30px 40px;
+}
+
+#more {
+  display: none;
 }
 
 /* ABOUT PAGE SECTION  */

@@ -14,8 +14,13 @@
 
   #navbar {
     display: flex;
+    position: fixed;
     justify-content: space-between;
-    padding: 0 24px;
+    align-items: center;
+    padding: 22px 27px;
+    width: 100%;
+    background: transparent;
+    top: 0;
   }
 
   .my-logo {
@@ -23,7 +28,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #ec5242;
+    color: #ec5242 !important;
     animation: logoAnimate 3s alternate-reverse 3s 2;
   }
 
@@ -41,7 +46,7 @@
     font-size: 15px;
     line-height: 20px;
     text-decoration: none;
-    color: #344563;
+    color: crimson;
   }
 
   .hamburger {
@@ -91,7 +96,10 @@
 
   /* MAIN PROGRAM SECTIONS  */
   .main-program-list {
-    background: url('/images/bg4.jpg');
+    background-color: #020202;
+    opacity: 0.8;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #0d0f31 0, #0d0f31 1px, #020202 0, #020202 50%);
   }
 
   .main-program-title {
@@ -205,6 +213,10 @@
     background: #272a31;
     margin-top: 33px;
     width: 100%;
+  }
+
+  #myBtn {
+    display: none;
   }
 
   .d-partner {
