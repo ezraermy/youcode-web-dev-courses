@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://ezraermy.github.io/)
+- [Live Demo Link](https://ezraermy.github.io/youcode-web-dev-courses/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
