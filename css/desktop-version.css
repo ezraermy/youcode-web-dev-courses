@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    background: #e5e5e5;
+    background: #fff;
   }
 
   #navbar {
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
     margin-right: 10%;
   }
 
@@ -55,6 +55,8 @@
 
   #main-page {
     background: #e5e5e5;
+    padding-bottom: 40px;
+    margin-bottom: -31px;
   }
 
   .headline {
@@ -295,7 +297,7 @@
     display: flex;
     flex-direction: column;
     background: #f2f2f2;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .about-page-title {
