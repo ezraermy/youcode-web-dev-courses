@@ -12,15 +12,17 @@
     background: #fff;
   }
 
-  #navbar {
+  .navbar {
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 27px;
+    padding: 0 12px;
     width: 100%;
-    background: transparent;
-    top: 0;
+    background: #fff;
+  }
+
+  .social-nav {
+    display: block;
   }
 
   .my-logo {
@@ -30,20 +32,28 @@
     line-height: 20px;
     color: #ec5242;
     animation: logoAnimate 3s alternate-reverse 3s 2;
+    margin-left: 70px;
   }
 
   .desktop-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 2rem;
+    gap: 3rem;
     margin-right: 10%;
+  }
+
+  .navbar-btn {
+    border: 3px #ec5242 solid;
+    padding: 10px;
+    background: #fff;
+    color: crimson;
   }
 
   .desktop-menu a {
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
     text-decoration: none;
     color: #ec5242;
@@ -54,21 +64,32 @@
   }
 
   #main-page {
-    background: #e5e5e5;
+    background: #f8f8f8;
     padding-bottom: 40px;
     margin-bottom: -31px;
+    background-image: url('/images/flat.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
   }
 
   .headline {
     padding: 100px;
   }
 
+  .greet-title {
+    margin-top: 60px;
+    padding: 20px 0 20px 100px;
+    color: #ec5242;
+    font-size: 24px;
+  }
+
   .title {
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 200;
     color: #ec5242;
     padding: 0 76px;
     margin: 0 20px;
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .content {
@@ -77,8 +98,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-    margin: 0 250px 0 100px;
-    padding: 24px;
+    margin: 20px 250px 20px 100px;
+    padding: 10px;
     border: 2px #fff solid;
   }
 
@@ -114,6 +135,8 @@
     font-size: 16px;
     text-align: center;
     padding-top: 12px;
+    background: #f8f8f8;
+    margin: 0;
   }
 
   hr {
@@ -173,6 +196,13 @@
     cursor: pointer;
   }
 
+  #all-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 12rem;
+    background: #f8f8f8;
+  }
+
   .featured-speakers {
     display: flex;
     flex-direction: row;
@@ -183,7 +213,15 @@
 
   .person-photo {
     height: auto;
-    max-width: 10%;
+    max-width: 20%;
+  }
+
+  .box {
+    display: block;
+    background: url('/images/frame2.png');
+    background-repeat: no-repeat;
+    width: 30%;
+    border: none;
   }
 
   .person-content > hr {
@@ -298,6 +336,13 @@
     flex-direction: column;
     background: #f2f2f2;
     margin-top: 60px;
+    background-image: url('/images/flat.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+  }
+
+  .about-greet-title {
+    display: none;
   }
 
   .about-page-title {
@@ -305,7 +350,8 @@
     text-align: center;
     padding: 12px 0;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 200;
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .about-page-content {
@@ -401,6 +447,7 @@
     padding: 22px 10px;
     gap: 60px;
     background: #272a31;
+    margin-bottom: -26px;
   }
 
   .copy {

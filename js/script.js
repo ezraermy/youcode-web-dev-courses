@@ -1,26 +1,27 @@
-const menu = document.querySelector('.menu');
-const menuItems = document.querySelectorAll('.menuItem');
-const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('.closeIcon');
-const menuIcon = document.querySelector('.menuIcon');
 const myBtn = document.querySelector('.my-btn');
 
 const eachSpeakers = [
   {
     name: 'Ezra Ermy',
-    picture: 'images/avatar.jpg',
+    picture: 'images/ez.JPG',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
   {
     name: 'Abenu Ermy',
-    picture: 'images/avatar.jpg',
+    picture: 'images/ez.JPG',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
   {
     name: 'Ekut Ermy',
-    picture: 'images/avatar.jpg',
+    picture: 'images/ez.JPG',
+    profession: 'Ezra is a full-stack web developer and researcher',
+    backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
+  },
+  {
+    name: 'Tutu Ermy',
+    picture: 'images/ez.JPG',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
@@ -29,12 +30,11 @@ const eachSpeakers = [
 const allSpeakers = document.querySelector('#all-speakers');
 const title = document.querySelector('.featured-speaker-title');
 
-title.innerHTML = `<h2 class="featured-speaker-title">Featured Teachers</h2>
-<hr>`;
+title.innerHTML = 'Featured Teacheres <hr>';
 
 for (let i = 0; i < eachSpeakers.length; i += 1) {
   const speaker = `<section class="featured-speakers">
-  <img src="${eachSpeakers[i].picture}" alt="Speaker's photo" class="person-photo">
+  <img src="${eachSpeakers[i].picture}" alt="Speaker's photo" class="person-photo box">
   <div class="person-content">
     <h2 class="person-name">${eachSpeakers[i].name}</h2>
     <p class="person-profession">${eachSpeakers[i].profession}</p>
@@ -65,24 +65,3 @@ function myFunction() {
 }
 
 myBtn.addEventListener('click', myFunction);
-
-// MOBILE MENU
-function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
-    closeIcon.style.display = 'none';
-    menuIcon.style.display = 'block';
-  } else {
-    menu.classList.add('showMenu');
-    closeIcon.style.display = 'block';
-    menuIcon.style.display = 'none';
-  }
-}
-
-hamburger.addEventListener('click', toggleMenu);
-
-menuItems.forEach(
-  (menuItem) => {
-    menuItem.addEventListener('click', toggleMenu);
-  },
-);

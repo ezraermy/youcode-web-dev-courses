@@ -162,6 +162,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank Cindy Shin for her wornderful design
 I would like to thank Jose Luis Vazquez Flores
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
