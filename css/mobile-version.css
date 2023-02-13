@@ -114,7 +114,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background: #f8f8f8;
-  background-image: url('/images/flat.png');
+  background-image: url('../images/flat.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -263,7 +263,7 @@ hr {
 
 .box {
   display: block;
-  background: url('/images/frame.png');
+  background: url('../images/frame.png');
   background-repeat: no-repeat;
   width: 30%;
   border: none;
@@ -312,7 +312,7 @@ hr {
   background: #f8f8f8;
   margin-top: 45px;
   padding-top: 30px;
-  background-image: url('/images/flat.png');
+  background-image: url('../images/flat.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
