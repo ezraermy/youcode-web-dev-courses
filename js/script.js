@@ -41,7 +41,7 @@ const allSpeakers = document.querySelector('#all-speakers');
 const allspeakersDesktop = document.querySelector('#all-speakers-desktop');
 const title = document.querySelector('.featured-speaker-title');
 
-title.innerHTML = 'Featured Teacheres <hr>';
+title.innerHTML = 'Featured Teachers <hr>';
 
 for (let i = 0; i < eachSpeakers.length - 4; i += 1) {
   const speaker = `<section class="featured-speakers">

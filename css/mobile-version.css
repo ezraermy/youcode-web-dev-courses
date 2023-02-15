@@ -53,6 +53,7 @@ header {
 .menuIcon {
   font-size: 32px;
   font-weight: 700;
+  margin-top: -17px;
 }
 
 .hamburger > .closeIcon {
@@ -304,7 +305,7 @@ hr {
   width: 80%;
   height: 40px;
   background: #fff;
-  border: 1px #e5e5e5 solid;
+  border: 1px #d4d4d4 solid;
   margin: 30px 40px 30px 40px;
 }
 
