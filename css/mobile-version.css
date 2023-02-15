@@ -40,19 +40,37 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 22px 27px;
+  padding: 35px 27px;
   width: 85%;
-  background: #fff;
+  background: #f8f8f8;
   top: 0;
 }
 
-.my-logo {
-  font-style: normal;
+.closeIcon {
+  display: none;
+}
+
+.menuIcon {
+  font-size: 32px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #ec5242;
-  animation: logoAnimate 3s alternate-reverse 3s 2;
+}
+
+.hamburger > .closeIcon {
+  background: none;
+  color: white;
+}
+
+.hamburger {
+  position: fixed;
+  border: none;
+  background-color: transparent;
+  color: #808080;
+  cursor: pointer;
+  padding: 0 0 50px;
+}
+
+.my-logo {
+  display: none;
 }
 
 /* MOBILE MENU DOM MANIPULATION */
@@ -68,23 +86,6 @@ header {
 
 .menuItem:hover {
   text-decoration: underline;
-}
-
-.hamburger {
-  position: relative;
-  border: none;
-  background-color: transparent;
-  color: #ec5242;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.hamburger > .closeIcon {
-  background: none;
-  color: white;
 }
 
 .menu {
@@ -168,11 +169,13 @@ a:link {
 
 .date-set {
   color: #344563;
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 1000;
+  margin: 20px 8px 8px;
 }
 
 .location {
-  margin-top: -5px;
+  margin: -5px 8px 0;
   color: #344563;
 }
 
@@ -203,15 +206,13 @@ hr {
   border: 1px solid #ec5242;
 }
 
-.program-one,
-.program-two,
-.program-three {
+.single-program {
   display: flex;
   flex-direction: row;
   background: rgba(46, 46, 49, 0.8);
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
   margin: 20px 25px;
 }
 
@@ -221,7 +222,7 @@ hr {
 }
 
 .program-title {
-  color: #ec5242;
+  color: #e42a17;
   font-size: 14px;
 }
 
@@ -234,7 +235,7 @@ hr {
   display: flex;
   width: 70%;
   height: 65px;
-  background: #ec5242;
+  background: #e42a17;
   justify-content: center;
   align-items: center;
   margin: 32px auto;
@@ -246,6 +247,10 @@ hr {
   background: #fff;
 }
 
+#all-speakers-desktop {
+  display: none;
+}
+
 .featured-speakers {
   display: flex;
   flex-direction: row;
@@ -253,6 +258,10 @@ hr {
   align-items: center;
   gap: 15px;
   margin: 12px;
+}
+
+.show-loader {
+  display: none;
 }
 
 .person-photo {
@@ -292,12 +301,17 @@ hr {
   font-style: italic;
 }
 
-#myBtn {
+.load-more {
   width: 80%;
   height: 40px;
   background: #fff;
   border: 1px #e5e5e5 solid;
   margin: 30px 40px 30px 40px;
+}
+
+.fa-solid {
+  padding-left: 6px;
+  color: #e42a17;
 }
 
 #more {

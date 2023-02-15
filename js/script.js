@@ -1,5 +1,3 @@
-const myBtn = document.querySelector('.my-btn');
-
 const eachSpeakers = [
   {
     name: 'Ezra Ermy',
@@ -9,28 +7,53 @@ const eachSpeakers = [
   },
   {
     name: 'Abenu Ermy',
-    picture: 'images/ez.JPG',
+    picture: 'images/ekut2.png',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
   {
     name: 'Ekut Ermy',
-    picture: 'images/ez.JPG',
+    picture: 'images/bu.png',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
   {
     name: 'Tutu Ermy',
-    picture: 'images/ez.JPG',
+    picture: 'images/ekut2.png',
+    profession: 'Ezra is a full-stack web developer and researcher',
+    backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
+  },
+  {
+    name: 'Ekut Ermy',
+    picture: 'images/abenu.png',
+    profession: 'Ezra is a full-stack web developer and researcher',
+    backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
+  },
+  {
+    name: 'Tutu Ermy',
+    picture: 'images/bu.png',
     profession: 'Ezra is a full-stack web developer and researcher',
     backgound: 'Excellent knowledge of JavaScript/TypeScript, HTML and CSS. Provides mentorship and supervise developers',
   },
 ];
 
 const allSpeakers = document.querySelector('#all-speakers');
+const allspeakersDesktop = document.querySelector('#all-speakers-desktop');
 const title = document.querySelector('.featured-speaker-title');
 
 title.innerHTML = 'Featured Teacheres <hr>';
+
+for (let i = 0; i < eachSpeakers.length - 4; i += 1) {
+  const speaker = `<section class="featured-speakers">
+  <img src="${eachSpeakers[i].picture}" alt="Speaker's photo" class="person-photo box">
+  <div class="person-content">
+    <h2 class="person-name">${eachSpeakers[i].name}</h2>
+    <p class="person-profession">${eachSpeakers[i].profession}</p>
+    <hr>
+    <p class="person-background">${eachSpeakers[i].backgound}</p>
+  </div></section>`;
+  allSpeakers.innerHTML += speaker;
+}
 
 for (let i = 0; i < eachSpeakers.length; i += 1) {
   const speaker = `<section class="featured-speakers">
@@ -40,28 +63,22 @@ for (let i = 0; i < eachSpeakers.length; i += 1) {
     <p class="person-profession">${eachSpeakers[i].profession}</p>
     <hr>
     <p class="person-background">${eachSpeakers[i].backgound}</p>
-  </div>`;
-  allSpeakers.innerHTML += speaker;
+  </div></section>`;
+  allspeakersDesktop.innerHTML += speaker;
 }
 
-// LOAD MORE
 const loadMore = document.querySelector('.load-more');
-loadMore.innerHTML = `<p id="dots"></p><p id="more" style="padding-left: 20px; color: crimson">No more speakers</p>
-</section> <button onclick="myFunction()" id="myBtn">Load more</button>`;
-function myFunction() {
-  const dots = document.getElementById('dots');
-  const moreText = document.getElementById('more');
-  const btnText = document.getElementById('myBtn');
-
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    btnText.innerHTML = 'Read less';
-    moreText.style.display = 'inline';
+loadMore.addEventListener('click', (e) => {
+  e.target.classList.add('show-loader');
+  for (let i = 2; i < eachSpeakers.length; i += 1) {
+    const speaker = `<section class="featured-speakers">
+  <img src="${eachSpeakers[i].picture}" alt="Speaker's photo" class="person-photo box">
+  <div class="person-content">
+    <h2 class="person-name">${eachSpeakers[i].name}</h2>
+    <p class="person-profession">${eachSpeakers[i].profession}</p>
+    <hr>
+    <p class="person-background">${eachSpeakers[i].backgound}</p>
+  </div></section>`;
+    allSpeakers.innerHTML += speaker;
   }
-}
-
-myBtn.addEventListener('click', myFunction);
+});

@@ -30,17 +30,17 @@
         <a class="my-logo" href="#headline">YouCode</a>
         <ul class="menu">
           <li><a class="menuItem" href="about.html">About</a></li>
-          <li><a class="menuItem" href="#" style="color: lightgray">Program</a></li>
-          <li><a class="menuItem" href="#" style="color: lightgray">Join</a></li>
-          <li><a class="menuItem" href="#" style="color: lightgray">Sponsor</a></li>
-          <li><a class="menuItem" href="#" style="color: lightgray">News</a></li>
+          <li><a class="menuItem" href="#program-list">Program</a></li>
+          <li><a class="menuItem" href="#join">Join</a></li>
+          <li><a class="menuItem" href="#sponsors">Sponsor</a></li>
+          <li><a class="menuItem" href="#">News</a></li>
         </ul>
         <ul class="desktop-menu">
-          <li><a class="" href="about.html">About</a></li>
-          <li><a class="" href="#"style="color: lightgray">Program</a></li>
-          <li><a class="" href="#" style="color: lightgray">Join</a></li>
-          <li><a class="" href="#" style="color: lightgray">Sponsor</a></li>
-          <li><a class="" href="#" style="color: lightgray">News</a></li>
+          <li><a class="d-about" href="about.html">About</a></li>
+          <li><a class="d-menuItem" href="#program-list">Program</a></li>
+          <li><a class="d-menuItem" href="#join">Join</a></li>
+          <li><a class="d-menuItem" href="#sponsors">Sponsor</a></li>
+          <li><a class="d-menuItem" href="#">News</a></li>
           <button class="navbar-btn">CC Campaign</button>
          </ul>
         <button class="hamburger">
@@ -51,7 +51,7 @@
     </header>
     <main id="headline" class="headline">
       <p class="greet-title">"Hello! Sharing world!"</p>
-      <h2 class="title">A WEB DEVELOPMENT COURSE TO GET YOU STARTED</h2>
+      <h1 class="title">A WEB DEVELOPMENT COURSE TO GET YOU STARTED</h1>
       <p class="content">
         Kickstart your courses in web development. Master html, css and javascript
         courses using hands-on projects involving HTML, JavaScript, React.js, Ruby and more. 
@@ -60,44 +60,57 @@
       <h2 class="date-set">2023.02.01(MON) - 15(THUR)</h2>
       <p class="location">(Addis Ababa Arat Kilo Campus IT hall)</p>
     </main>
-    <section class="main-program-list">
+
+    <section id="program-list" class="main-program-list">
       <h2 class="main-program-title">Main Program</h2>
       <hr>
       <section class="programs">
-          <section class="program-one">
+          <section class="single-program">
             <img class="program-tag" src="images/html.png" alt="Html logo">
-            <h2 class="program-title">HTML</h2>
+            <h2 class="program-title">Lecture</h2>
             <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
           </section>
-          <section class="program-two">
+          <section class="single-program">
             <img class="program-tag" src="images/css.png" alt="css logo">
-            <h2 class="program-title">CSS</h2>
+            <h2 class="program-title">YC Exhibition</h2>
             <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
           </section>
-          <section class="program-three">
+          <section class="single-program">
             <img class="program-tag" src="images/js.png" alt="javascript logo">
-            <h2 class="program-title">JS</h2>
+            <h2 class="program-title">Forum</h2>
+            <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
+          </section>
+          <section class="single-program">
+            <img class="program-tag" src="images/css.png" alt="css logo">
+            <h2 class="program-title">Workshop</h2>
+            <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
+          </section>
+          <section class="single-program">
+            <img class="program-tag" src="images/js.png" alt="javascript logo">
+            <h2 class="program-title">YC Ignite</h2>
             <p class="program-content">Learn how to use CSS to style and visually orginize HTML pages</p>
           </section>
       </section>
-      <button class="program-join-btn">Join the Class for 2023</button>
+      <button id="join" class="program-join-btn">JOIN THE CLASS FOR 2023</button>
       </section>
 
       <h2 class="featured-speaker-title"></h2>
 
-      <section id="all-speakers">
+      <section id="all-speakers-desktop" class="speakers-layout">
         
       </section>
-      <div class="load-more">
-        <button onclick="myFunction()" class="my-btn" id="myBtn">Read more</button>
-      </div>
+
+      <section id="all-speakers" class="speakers-layout">
+        
+      </section>
+      <button class="load-more">Load more<i class="fa-solid fa-angle-down"></i></button>
      
       
     </section>
 
-    <section class="desktop-partner">
+    <section id="sponsors" class="desktop-partner">
       <div class="d-partner">
-        <h4 class="d-partner-title">Partner</h4>
+        <h2 class="d-partner-title">Partner</h2>
         <hr>
         <ul class="d-sponsors">
           <li class="d-mozilla">Mozilla</li>
